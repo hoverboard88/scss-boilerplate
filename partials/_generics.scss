@@ -1,0 +1,11 @@
+html, body {
+	background: #fff;
+}
+/* responsive images */
+img {
+	height: auto;
+	max-width: 100%;
+}
+img[src*=".svg"] {
+	max-height: 100%;
+}

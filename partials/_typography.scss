@@ -1,0 +1,34 @@
+// bottom margin
+p, ul, ol, blockquote, input, textarea, fieldset, button, pre, table, hr, dl {
+  margin: 0 0 $base--spacing;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include font-weight(normal);
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid $base--border;
+  margin-top: -1px;
+}
+
+.single-spaced {
+  margin-bottom: 0;
+}
+
+.one-half-spaced {
+  margin-bottom: $base--spacing / 2;
+}
+
+.double-spaced {
+  margin-bottom: $base--spacing;
+}
+
+.small, small {
+  @include font-size($font-size--small);
+}
+
+.display-font {
+  font-family: $secondary--font-family;
+}

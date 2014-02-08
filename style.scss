@@ -1,0 +1,31 @@
+/*! REPLACE WITH YOUR UNDERSCORES style.css COMMENT
+Theme Name: Hoverboard Boilerplate
+Theme URI: http://underscores.me/
+Author: Hoverboard
+Author URI: http://hoverboardstudios.com
+Description: Description
+Version: 1.0
+*/
+
+@import "compass";
+@import "singularitygs";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/normalize";
+
+@import "partials/generics";
+@import "partials/links";
+@import "partials/menus";
+//@import "partials/dropdowns";
+@import "partials/wells";
+@import "partials/forms";
+@import "partials/layout";
+@import "partials/typography";
+@import "partials/lists";
+@import "partials/tables";
+@import "partials/shame"; // http://csswizardry.com/2013/04/shame-css/
+
+//add your @imports here
+
+@import "partials/helpers";
+@import "partials/print";
