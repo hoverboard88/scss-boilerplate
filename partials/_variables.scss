@@ -6,7 +6,6 @@ Variables
   * Booleans
   */
 
-$experimental-support-for-svg: true; //free IE9 Gradients (compass variable)
 $legacy-support-for-ie8: true; //not sure what this does. Maybe hacky IE gradients?
 $border-box: true;
 
@@ -20,18 +19,24 @@ $border-box: true;
   * Grid
   */
 
-$grids: 12;
+// Depricated in Singularity 1.2
+// $grids: 12;
+
+// New Singularity 1.2 mixins
+@include add-grid(12);
+// @include add-gutter(30/54);
+// @include add-gutter-style('slit');
 
 /**
   * Base Styles
   */
 
-$base--color: #333;
+$base--color: #555;
 
 $base--border: $base--color;
 
-$base--font-family: 'Ubuntu', sans-serif;
-$secondary--font-family: 'Bitter', serif;
+$base--font-family: 'Open Sans', sans-serif;
+$secondary--font-family: 'PlutoSansLight', sans-serif;
 
 //set "bold" and "normal" weights here and use @include font-weight() mixin instead of font-weight.
 $font-weight__normal: 400;
@@ -47,18 +52,18 @@ $base--spacing: $base--font-size * $base--line-height;
   * Headings
   */
 
-$font-size--h1: 36px;
-$font-size--h2: 24px;
-$font-size--h3: 22px;
+$font-size--h1: 45px;
+$font-size--h2: 50px;
+$font-size--h3: 24px;
 $font-size--h4: 20px;
-$font-size--h5: 18px;
-$font-size--h6: 18px;
+$font-size--h5: 26px;
+$font-size--h6: 14px;
 
 /**
   * Other Sizes
   */
 
-$font-size--hero: 48px;
+$font-size--hero: 24px;
 $font-size--small: 10px;
 
 /**

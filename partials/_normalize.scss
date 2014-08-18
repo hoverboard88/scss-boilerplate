@@ -77,7 +77,8 @@ html, body {
   }
   background: #fff;
   color: $base--color;
-  line-height: $base--line-height * 1em;
+  // line-height: $base--line-height;
+  @include font-size($base--font-size);
   -webkit-text-size-adjust: 100%; // 2
   -ms-text-size-adjust: 100%; // 2
 }
