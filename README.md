@@ -1,4 +1,4 @@
-scss-boilerplate
-================
+Hoverboard SCSS Boilerplate
+===========================
 
-Starting point for scss
+This is a starting point for scss.

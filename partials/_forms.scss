@@ -32,6 +32,20 @@ label {
     margin-bottom: 0;
   }
 }
+
+input[type="submit"] {
+  display: block;
+  background: #033;
+  color: #eee;
+  border: 0;
+  border-radius: 0;
+  padding: 10px;
+  @include transition(background .3s);
+  &:focus, &:hover {
+    background: lighten(#033, 10%);
+  }
+}
+
 select {
   margin-bottom: $base--spacing;
   cursor: pointer;
