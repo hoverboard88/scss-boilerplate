@@ -52,6 +52,8 @@ textarea {
   background: #fff;
   padding: 5px;
   max-width: 400px;
+  border-radius: 0;
+  -webkit-appearance: none;
   width: 100%;
   &:focus {
     border-color: darken($base--border, 10%);
