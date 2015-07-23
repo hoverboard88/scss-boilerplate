@@ -1,23 +1,30 @@
-@mixin font-size($font-size, $line-height:false){
-  font-size: $font-size;
-  font-size: ($font-size / $base--font-size) * 1rem;
+@mixin font-size($font-size, $line-height:true){
 
-  $lh: ($base--spacing / $font-size * 1em);
+  font-size:$font-size;
+  font-size:($font-size / $base--font-size)*1rem;
 
-  // @if $font-size > $base--font-size {
-  //   $lh: $lh * 2;
-  // }
+  // set line-height for fonts under $base--font-size
+  $lh: $base--spacing / $font-size;
 
-  @while $lh < 1 {
-    $lh: $lh + $lh + $lh;
+  // one: $lh;
+  // two: $lh * 2;
+  // half: $lh * 1.5;
+  // lh: $lh;
+
+  // if the line-height is going to look crammed together (aka $font-size is bigger than $base--font-size)...
+  @if ((floor($font-size / $base--font-size / 2) * 2) > 0) {
+    // find HOW many times bigger it is than the base font size (like 1.5, 2 times). In order to round to the nearest half, we have to divide it by 2 before rounding down (aka floor()) then multiply back by 2 to get the number back to normal.
+    floor: floor($font-size / $base--font-size / 2) * 2;
+    $lh: $lh * (floor($font-size / $base--font-size / 2) * 2);
+    math: $font-size / $base--font-size;
   }
 
-  @if $line-height == true {
+  @if $line-height == true{
     line-height: $lh;
     margin: 0 0 $base--spacing;
   }
-
 }
+
 @mixin font-weight($weight) {
   @if $weight == "bold" {
     font-weight: $font-weight__bold;
@@ -31,4 +38,9 @@
   &::-moz-placeholder { @content; }
   &:-ms-input-placeholder { @content; }
   &::-webkit-input-placeholder { @content; }
+}
+@mixin breakpoint($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
 }

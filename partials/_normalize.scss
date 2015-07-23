@@ -39,10 +39,6 @@ audio,
 canvas,
 video {
   display: inline-block;
-  @if $legacy_support_for_ie {
-    *display: inline;
-    *zoom: 1;
-  }
 }
 
 // 1. Prevents modern browsers from displaying 'audio' without controls
@@ -72,13 +68,8 @@ audio:not([controls]) {
 //    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
 
 html, body {
-  @if $legacy_support_for_ie {
-    font-size: 100%; // 1
-  }
   background: #fff;
   color: $base--color;
-  // line-height: $base--line-height;
-  @include font-size($base--font-size);
   -webkit-text-size-adjust: 100%; // 2
   -ms-text-size-adjust: 100%; // 2
 }
@@ -93,7 +84,7 @@ body,
 textarea {
   font-family: $base--font-family;
   font-weight: $font-weight__normal;
-  font-size: $base--font-size;
+  @include font-size($base--font-size, false);
 }
 
 // Addresses margins handled incorrectly in IE6/7
@@ -177,12 +168,6 @@ strong {
   font-weight: $font-weight__bold;
 }
 
-@if $legacy_support_for_ie {
-  blockquote {
-    margin: 1em 40px;
-  }
-}
-
 // Addresses styling not present in S5, Chrome
 
 dfn {
@@ -196,14 +181,6 @@ mark {
   color: #000;
 }
 
-// Addresses margins set differently in IE6/7
-@if $legacy_support_for_ie {
-  p,
-  pre {
-    margin: 1em 0;
-  }
-}
-
 // Corrects font family set oddly in IE6, S4/5, Chrome
 // en.wikipedia.org/wiki/User:Davidgothberg/Test59
 
@@ -212,9 +189,6 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  @if $legacy_support_for_ie {
-    _font-family: 'courier new', monospace;
-  }
   font-size: 1em;
 }
 
@@ -235,12 +209,6 @@ q {
 // 1. Addresses CSS quotes not supported in IE6/7
 // 2. Addresses quote property not supported in S4
 
-// 1
-@if $legacy_support_for_ie {
-  q {
-    quotes: none;
-  }
-}
 
 // 2
 q:before,
@@ -275,46 +243,6 @@ sub {
 }
 
 // =============================================================================
-// Lists
-// =============================================================================
-
-// Addresses margins set differently in IE6/7
-@if $legacy_support_for_ie {
-  dl,
-  menu,
-  ol,
-  ul {
-    margin: 1em 0;
-  }
-}
-
-@if $legacy_support_for_ie {
-  dd {
-    margin: 0 0 0 40px;
-  }
-}
-
-// Addresses paddings set differently in IE6/7
-@if $legacy_support_for_ie {
-  menu,
-  ol,
-  ul {
-    padding: 0 0 0 40px;
-  }
-}
-
-// Corrects list images handled incorrectly in IE7
-
-nav {
-  ul,
-  ol {
-    @if $legacy_support_for_ie {
-      list-style-image: none;
-    }
-  }
-}
-
-// =============================================================================
 // Embedded content
 // =============================================================================
 
@@ -324,9 +252,6 @@ nav {
 
 img {
   border: 0; // 1
-  @if $legacy_support_for_ie {
-    -ms-interpolation-mode: bicubic; // 2
-  }
 }
 
 // Corrects overflow displayed oddly in IE9
@@ -349,13 +274,6 @@ figure {
 // Forms
 // =============================================================================
 
-// Corrects margin displayed oddly in IE6/7
-@if $legacy_support_for_ie {
-  form {
-    margin: 0;
-  }
-}
-
 // Define consistent border, margin, and padding
 
 fieldset {
@@ -373,9 +291,6 @@ legend {
   border: 0; // 1
   padding: 0; // 2
   white-space: normal; // 3
-  @if $legacy_support_for_ie {
-    *margin-left: -7px; // 4
-  }
 }
 
 // 1. Correct font family not being inherited in all browsers.
@@ -391,9 +306,6 @@ textarea {
   font-size: 100%; // 2
   margin: 0; // 3
   vertical-align: baseline; // 4
-  @if $legacy_support_for_ie {
-    *vertical-align: middle; // 4
-  }
 }
 
 // Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
@@ -427,9 +339,6 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button; // 2
   cursor: pointer; // 3
-  @if $legacy_support_for_ie {
-    *overflow: visible;  // 4
-  }
 }
 
 // Re-set default cursor for disabled elements
@@ -448,10 +357,6 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box; // 1
   padding: 0; // 2
-  @if $legacy_support_for_ie {
-    *height: 13px; // 3
-    *width: 13px; // 3
-  }
 }
 
 // 1. Addresses appearance set to searchfield in S5, Chrome
@@ -497,7 +402,7 @@ body {
 
 @if $border-box {
   * {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
   }
 }
 table {

@@ -6,7 +6,6 @@ Variables
   * Booleans
   */
 
-$legacy-support-for-ie8: true; //not sure what this does. Maybe hacky IE gradients?
 $border-box: true;
 
 /**
@@ -14,18 +13,6 @@ $border-box: true;
   */
 
 // $testcolor: #ff0;
-
-/**
-  * Grid
-  */
-
-// Depricated in Singularity 1.2
-// $grids: 12;
-
-// New Singularity 1.2 mixins
-@include add-grid(12);
-// @include add-gutter(30/54);
-// @include add-gutter-style('slit');
 
 /**
   * Base Styles
@@ -52,11 +39,11 @@ $base--spacing: $base--font-size * $base--line-height;
   * Headings
   */
 
-$font-size--h1: 45px;
+$font-size--h1: 42px;
 $font-size--h2: 50px;
-$font-size--h3: 24px;
+$font-size--h3: 23px;
 $font-size--h4: 20px;
-$font-size--h5: 26px;
+$font-size--h5: 22px;
 $font-size--h6: 14px;
 
 /**

@@ -40,7 +40,7 @@ input[type="submit"] {
   border: 0;
   border-radius: 0;
   padding: 10px;
-  @include transition(background .3s);
+  transition: background .3s;
   &:focus, &:hover {
     background: lighten(#033, 10%);
   }
