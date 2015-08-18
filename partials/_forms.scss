@@ -6,18 +6,63 @@ legend {
   padding: 0;
   margin-bottom: $base--spacing;
 }
+// Forms
+//
+// Normal `<input>` with `<label>` wrapper
+//
+// Markup:
+// <label for="input-text">
+//   Normal Input
+//   <input name="input-text" type="text">
+// </label>
+//
+// Styleguide 1.0.0
 label {
   display: block;
+  width: 100%;
 }
+// Inline
+//
+// If you want the label on the left side of the `<input>`
+//
+// Markup:
+// <label class="label--inline" for="input-inline">
+//   Inline Input
+//   <input name="input-inline" type="text">
+// </label>
+//
+// Styleguide 1.2.0
 .label--inline {
   display: inline;
 }
+// Required
+//
+// Adds asterisks after label
+//
+// Markup:
+// <label class="label--required" for="input-required">
+//   Required Input
+//   <input name="input-required" type="text">
+// </label>
+//
+// Styleguide 1.1.0
 .label--required {
   &:after {
     content: "*";
     color: red;
   }
 }
+// Radio
+//
+// add to `<label>` if `<input type="radio">`
+//
+// Markup:
+// <label class="label--inline" for="input-inline">
+//   Inline Input
+//   <input name="input-inline" type="text">
+// </label>
+//
+// Styleguide 1.3.0
 .label--radio {
   margin-bottom: 0;
   input[type="radio"] {
@@ -25,6 +70,15 @@ label {
     margin-bottom: 0;
   }
 }
+// Checkbox
+//
+// Markup:
+// <label for="input-checkbox">
+//   <input name="input-checkbox" type="checkbox">
+//   Checkbox
+// </label>
+//
+// Styleguide 1.4.0
 .label--checkbox {
   margin-bottom: 0;
   input[type="checkbox"] {
@@ -32,8 +86,14 @@ label {
     margin-bottom: 0;
   }
 }
-
-input[type="submit"] {
+// Submit Buttons
+//
+// Markup:
+// <input type="submit" value="Submit Input">
+// <button>Submit Button</button>
+//
+// Styleguide 1.5.0
+input[type="submit"], button {
   display: block;
   background: #033;
   color: #eee;
