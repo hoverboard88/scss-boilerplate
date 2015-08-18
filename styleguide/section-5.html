@@ -47,32 +47,6 @@
           <span class="kss-nav__ref">3</span
           ><span class="kss-nav__name">Mixins</span>
         </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-1">
-                <span class="kss-nav__ref">3.1</span
-                ><span class="kss-nav__name">font-size</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-2">
-                <span class="kss-nav__ref">3.2</span
-                ><span class="kss-nav__name">font-weight</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-3">
-                <span class="kss-nav__ref">3.3</span
-                ><span class="kss-nav__name">input-placeholder</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-4">
-                <span class="kss-nav__ref">3.4</span
-                ><span class="kss-nav__name">Breakpoint</span>
-              </a>
-            </li>
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-4.html">
@@ -85,58 +59,74 @@
           <span class="kss-nav__ref">5</span
           ><span class="kss-nav__name">Grids</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-5.html#kssref-5-1">
+                <span class="kss-nav__ref">5.1</span
+                ><span class="kss-nav__name">16 Column Grid</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-5.html#kssref-5-2">
+                <span class="kss-nav__ref">5.2</span
+                ><span class="kss-nav__name">Spaced Grid</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-5.html#kssref-5-3">
+                <span class="kss-nav__ref">5.3</span
+                ><span class="kss-nav__name">Varied Width</span>
+              </a>
+            </li>
+        </ul>
       </li>
     </ul>
   </nav>
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-3" class="kss-section kss-section--depth-1">
+      <div     id="kssref-5" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-3">
+        <a class="kss-title__permalink" href="#kssref-5">
           <span class="kss-title__ref">
-              3
+              5
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          Mixins
+          Grids
         </a>
       </h1>
 
 
       <div class="kss-description">
-        <p>Available Mixins</p>
+        <p>Simple grid system</p>
 
       </div>
     </div>
 
 
       </div>
-      <section id="kssref-3-1" class="kss-section kss-section--depth-2">
+      <section id="kssref-5-1" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-1">
+        <a class="kss-title__permalink" href="#kssref-5-1">
           <span class="kss-title__ref">
-              3.1
+              5.1
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          font-size
+          16 Column Grid
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Declare font-size. Falls back from rem&#39;s with optional line-height for vertial rhythm.</p>
-<ul>
-<li><code>$font-size</code>: Size in pixels</li>
-<li><code>$line-height</code>: Boolean</li>
-</ul>
+        <p>Simple 16 column grid</p>
 
       </div>
     </div>
@@ -146,36 +136,59 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include font-size(14px, false);
+          <div class="grid-columns">
+  <div class="grid-column-4">
+		Column 1.
+  </div>
+  <div class="grid-column-4">
+		Column 2.
+  </div>
+  <div class="grid-column-4">
+		Column 3.
+  </div>
+  <div class="grid-column-4">
+		Column 4.
+  </div>
+</div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include font-size(14px, false);</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;grid-columns&quot;&gt;
+  &lt;div class=&quot;grid-column-4&quot;&gt;
+		Column 1.
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column-4&quot;&gt;
+		Column 2.
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column-4&quot;&gt;
+		Column 3.
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column-4&quot;&gt;
+		Column 4.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-2" class="kss-section kss-section--depth-2">
+      <section id="kssref-5-2" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-2">
+        <a class="kss-title__permalink" href="#kssref-5-2">
           <span class="kss-title__ref">
-              3.2
+              5.2
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          font-weight
+          Spaced Grid
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Declare font-weight. Some fonts use 400, 300, etc. To keep consistency, using this mixin.</p>
-<ul>
-<li><code>$font-weight</code>: bold or normal.</li>
-</ul>
+        <p>Simple 16 column grid</p>
 
       </div>
     </div>
@@ -185,33 +198,75 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include font-weight(bold);
+          <div class="grid-columns">
+  <div class="grid-column-4 grid-column--padded">
+		<div class="well">
+      Column 1.
+    </div>
+  </div>
+  <div class="grid-column-4 grid-column--padded">
+		<div class="well">
+      Column 2.
+    </div>
+  </div>
+  <div class="grid-column-4 grid-column--padded">
+		<div class="well">
+      Column 3.
+    </div>
+  </div>
+  <div class="grid-column-4 grid-column--padded">
+		<div class="well">
+      Column 4.
+    </div>
+  </div>
+</div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include font-weight(bold);</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;grid-columns&quot;&gt;
+  &lt;div class=&quot;grid-column-4 grid-column--padded&quot;&gt;
+		&lt;div class=&quot;well&quot;&gt;
+      Column 1.
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column-4 grid-column--padded&quot;&gt;
+		&lt;div class=&quot;well&quot;&gt;
+      Column 2.
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column-4 grid-column--padded&quot;&gt;
+		&lt;div class=&quot;well&quot;&gt;
+      Column 3.
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column-4 grid-column--padded&quot;&gt;
+		&lt;div class=&quot;well&quot;&gt;
+      Column 4.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-3" class="kss-section kss-section--depth-2">
+      <section id="kssref-5-3" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-3">
+        <a class="kss-title__permalink" href="#kssref-5-3">
           <span class="kss-title__ref">
-              3.3
+              5.3
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          input-placeholder
+          Varied Width
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>When declaring placeholder style in <code>&lt;input&gt;</code>.</p>
+        <p>You can use various sized columns</p>
 
       </div>
     </div>
@@ -221,59 +276,38 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include input-placeholder(){
- ...
-};
+          <div class="grid-columns">
+  <div class="grid-column-8 grid-column--padded">
+    Column 1.
+  </div>
+  <div class="grid-column-4 grid-column--padded">
+    Column 2.
+  </div>
+  <div class="grid-column-2 grid-column--padded">
+    Column 3.
+  </div>
+  <div class="grid-column-2 grid-column--padded">
+    Column 4.
+  </div>
+</div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include input-placeholder(){
- ...
-};</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-3-4" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-4">
-          <span class="kss-title__ref">
-              3.4
-            <span class="kss-title__permalink-hash">
-                #permalink
-            </span>
-          </span>
-          Breakpoint
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>Mixin for Mobile-first media queries</p>
-<ul>
-<li><code>$width</code>: Any value, em or px.</li>
-</ul>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          @include breakpoint(30em){
- ...
-};
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include breakpoint(30em){
- ...
-};</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;grid-columns&quot;&gt;
+  &lt;div class=&quot;grid-column-8 grid-column--padded&quot;&gt;
+    Column 1.
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column-4 grid-column--padded&quot;&gt;
+    Column 2.
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column-2 grid-column--padded&quot;&gt;
+    Column 3.
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-column-2 grid-column--padded&quot;&gt;
+    Column 4.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
 
       </section>

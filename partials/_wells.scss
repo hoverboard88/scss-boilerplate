@@ -16,6 +16,7 @@
 // Styleguide 4.1.0
 .well {
   padding: $base--spacing / 2;
+  background: #ddd;
   @include breakpoint(700px) {
     padding: $base--spacing;
   }
@@ -55,14 +56,22 @@
 }
 // Alerts
 //
-// .alert-success - Good to go!
-// .alert-info - neutral
-// .alert-warning - important
-// .alert-danger - very important
-//
 // Markup:
-// <div class="alert-success">
-//   A box with content in it.
+// <div class="alert alert-success">
+//   <h3>Success</h3>
+//   A box with <a href="#">content</a> in it.
+// </div>
+// <div class="alert alert-info">
+//   <h3>Info</h3>
+//   A box with <a href="#">content</a> in it.
+// </div>
+// <div class="alert alert-warning">
+//   <h3>Warning</h3>
+//   A box with <a href="#">content</a> in it.
+// </div>
+// <div class="alert alert-danger">
+//   <h3>Danger</h3>
+//   A box with <a href="#">content</a> in it.
 // </div>
 //
 // Styleguide 4.2.0
