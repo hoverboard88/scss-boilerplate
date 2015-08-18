@@ -1,6 +1,42 @@
-// =============================================================================
 // Tables
-// =============================================================================
+//
+// Markup:
+// <table>
+//   <thead>
+//      <tr>
+//        <th>Head 1</th>
+//        <th>Head 2</th>
+//        <th>Head 3</th>
+//        <th>Head 4</th>
+//        <th>Head 5</th>
+//      </tr>
+//   </thead>
+//   <tbody>
+//      <tr>
+//        <td>Content</td>
+//        <td>Content</td>
+//        <td>Content</td>
+//        <td>Content</td>
+//        <td>Content</td>
+//      </tr>
+//      <tr>
+//        <td>Content</td>
+//        <td>Content</td>
+//        <td>Content</td>
+//        <td>Content</td>
+//        <td>Content</td>
+//      </tr>
+//      <tr>
+//        <td>Content</td>
+//        <td>Content</td>
+//        <td>Content</td>
+//        <td>Content</td>
+//        <td>Content</td>
+//      </tr>
+//   </tbody>
+// </table>
+//
+// Styleguide 7.0.0
 
 table {
   width: 100%;
