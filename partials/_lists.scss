@@ -1,6 +1,45 @@
+// Lists
+//
+// Styleguide 9.0.0
+
+// Unordered Lists
+//
+// Markup:
+// <ul>
+//  <li>List Item 1</li>
+//  <li>List Item 2</li>
+//  <li>List Item 3</li>
+//  <li>List Item 4</li>
+// </ul>
+//
+// Styleguide 9.1.0
+
+// Ordered Lists
+//
+// Markup:
+// <ol>
+//  <li>List Item 1</li>
+//  <li>List Item 2</li>
+//  <li>List Item 3</li>
+//  <li>List Item 4</li>
+// </ol>
+//
+// Styleguide 9.2.0
 ul, ol {
   padding-left: 25px;
 }
+
+// Unstyled Lists
+//
+// Markup:
+// <ul class="list--unstyled">
+//  <li>List Item 1</li>
+//  <li>List Item 2</li>
+//  <li>List Item 3</li>
+//  <li>List Item 4</li>
+// </ul>
+//
+// Styleguide 9.2.0
 .list--unstyled {
   list-style: none;
   padding: 0;
@@ -12,13 +51,41 @@ ul, ol {
     display: inline-block;
   }
 }
-.list--justifed {
+
+// Justified Lists
+//
+// Markup:
+// <ul class="list--justified">
+//  <li>List Item 1</li>
+//  <li>List Item 2</li>
+//  <li>List Item 3</li>
+//  <li>List Item 4</li>
+// </ul>
+//
+// Styleguide 9.3.0
+.list--justified {
   display: table;
   width: 100%;
   li {
     display: table-cell;
   }
 }
+
+// Definition Lists
+//
+// Markup:
+// <dl class="def-list-inline">
+//   <dt>Term</dt>
+//   <dd>Definition</dd>
+//   <dt>Term</dt>
+//   <dd>Definition</dd>
+//   <dt>Term</dt>
+//   <dd>Definition</dd>
+//   <dt>Term</dt>
+//   <dd>Definition</dd>
+// </dl>
+//
+// Styleguide 9.4.0
 .def-list-inline {
   @extend .clearfix;
   dt {
@@ -32,7 +99,6 @@ ul, ol {
     }
   }
   dd {
-
     float: left;
     display: inline-block;
     margin-left: 0;

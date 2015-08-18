@@ -47,32 +47,6 @@
           <span class="kss-nav__ref">3</span
           ><span class="kss-nav__name">Mixins</span>
         </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-1">
-                <span class="kss-nav__ref">3.1</span
-                ><span class="kss-nav__name">font-size</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-2">
-                <span class="kss-nav__ref">3.2</span
-                ><span class="kss-nav__name">font-weight</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-3">
-                <span class="kss-nav__ref">3.3</span
-                ><span class="kss-nav__name">input-placeholder</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-4">
-                <span class="kss-nav__ref">3.4</span
-                ><span class="kss-nav__name">Breakpoint</span>
-              </a>
-            </li>
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-4.html">
@@ -109,60 +83,80 @@
           <span class="kss-nav__ref">9</span
           ><span class="kss-nav__name">Lists</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-9.html#kssref-9-1">
+                <span class="kss-nav__ref">9.1</span
+                ><span class="kss-nav__name">Unordered Lists</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-9.html#kssref-9-2">
+                <span class="kss-nav__ref">9.2</span
+                ><span class="kss-nav__name">Unstyled Lists</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-9.html#kssref-9-2">
+                <span class="kss-nav__ref">9.2</span
+                ><span class="kss-nav__name">Ordered Lists</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-9.html#kssref-9-3">
+                <span class="kss-nav__ref">9.3</span
+                ><span class="kss-nav__name">Justified Lists</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-9.html#kssref-9-4">
+                <span class="kss-nav__ref">9.4</span
+                ><span class="kss-nav__name">Definition Lists</span>
+              </a>
+            </li>
+        </ul>
       </li>
     </ul>
   </nav>
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-3" class="kss-section kss-section--depth-1">
+      <div     id="kssref-9" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-3">
+        <a class="kss-title__permalink" href="#kssref-9">
           <span class="kss-title__ref">
-              3
+              9
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          Mixins
+          Lists
         </a>
       </h1>
 
 
-      <div class="kss-description">
-        <p>Available Mixins</p>
-
-      </div>
     </div>
 
 
       </div>
-      <section id="kssref-3-1" class="kss-section kss-section--depth-2">
+      <section id="kssref-9-1" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-1">
+        <a class="kss-title__permalink" href="#kssref-9-1">
           <span class="kss-title__ref">
-              3.1
+              9.1
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          font-size
+          Unordered Lists
         </a>
       </h2>
 
 
-      <div class="kss-description">
-        <p>Declare font-size. Falls back from rem&#39;s with optional line-height for vertial rhythm.</p>
-<ul>
-<li><code>$font-size</code>: Size in pixels</li>
-<li><code>$line-height</code>: Boolean</li>
-</ul>
-
-      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
@@ -170,38 +164,41 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include font-size(14px, false);
+          <ul>
+ <li>List Item 1</li>
+ <li>List Item 2</li>
+ <li>List Item 3</li>
+ <li>List Item 4</li>
+</ul>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include font-size(14px, false);</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul&gt;
+ &lt;li&gt;List Item 1&lt;/li&gt;
+ &lt;li&gt;List Item 2&lt;/li&gt;
+ &lt;li&gt;List Item 3&lt;/li&gt;
+ &lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-2" class="kss-section kss-section--depth-2">
+      <section id="kssref-9-2" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-2">
+        <a class="kss-title__permalink" href="#kssref-9-2">
           <span class="kss-title__ref">
-              3.2
+              9.2
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          font-weight
+          Unstyled Lists
         </a>
       </h2>
 
 
-      <div class="kss-description">
-        <p>Declare font-weight. Some fonts use 400, 300, etc. To keep consistency, using this mixin.</p>
-<ul>
-<li><code>$font-weight</code>: bold or normal.</li>
-</ul>
-
-      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
@@ -209,35 +206,41 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include font-weight(bold);
+          <ol>
+ <li>List Item 1</li>
+ <li>List Item 2</li>
+ <li>List Item 3</li>
+ <li>List Item 4</li>
+</ol>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include font-weight(bold);</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ol&gt;
+ &lt;li&gt;List Item 1&lt;/li&gt;
+ &lt;li&gt;List Item 2&lt;/li&gt;
+ &lt;li&gt;List Item 3&lt;/li&gt;
+ &lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-3" class="kss-section kss-section--depth-2">
+      <section id="kssref-9-2" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-3">
+        <a class="kss-title__permalink" href="#kssref-9-2">
           <span class="kss-title__ref">
-              3.3
+              9.2
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          input-placeholder
+          Ordered Lists
         </a>
       </h2>
 
 
-      <div class="kss-description">
-        <p>When declaring placeholder style in <code>&lt;input&gt;</code>.</p>
-
-      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
@@ -245,42 +248,41 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include input-placeholder(){
- ...
-};
+          <ol>
+ <li>List Item 1</li>
+ <li>List Item 2</li>
+ <li>List Item 3</li>
+ <li>List Item 4</li>
+</ol>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include input-placeholder(){
- ...
-};</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ol&gt;
+ &lt;li&gt;List Item 1&lt;/li&gt;
+ &lt;li&gt;List Item 2&lt;/li&gt;
+ &lt;li&gt;List Item 3&lt;/li&gt;
+ &lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-4" class="kss-section kss-section--depth-2">
+      <section id="kssref-9-3" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-4">
+        <a class="kss-title__permalink" href="#kssref-9-3">
           <span class="kss-title__ref">
-              3.4
+              9.3
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          Breakpoint
+          Justified Lists
         </a>
       </h2>
 
 
-      <div class="kss-description">
-        <p>Mixin for Mobile-first media queries</p>
-<ul>
-<li><code>$width</code>: Any value, em or px.</li>
-</ul>
-
-      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
@@ -288,16 +290,72 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include breakpoint(30em){
- ...
-};
+          <ul class="list--justified">
+ <li>List Item 1</li>
+ <li>List Item 2</li>
+ <li>List Item 3</li>
+ <li>List Item 4</li>
+</ul>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include breakpoint(30em){
- ...
-};</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;list--justified&quot;&gt;
+ &lt;li&gt;List Item 1&lt;/li&gt;
+ &lt;li&gt;List Item 2&lt;/li&gt;
+ &lt;li&gt;List Item 3&lt;/li&gt;
+ &lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-9-4" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-9-4">
+          <span class="kss-title__ref">
+              9.4
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Definition Lists
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <dl class="def-list-inline">
+  <dt>Term</dt>
+  <dd>Definition</dd>
+  <dt>Term</dt>
+  <dd>Definition</dd>
+  <dt>Term</dt>
+  <dd>Definition</dd>
+  <dt>Term</dt>
+  <dd>Definition</dd>
+</dl>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;dl class=&quot;def-list-inline&quot;&gt;
+  &lt;dt&gt;Term&lt;/dt&gt;
+  &lt;dd&gt;Definition&lt;/dd&gt;
+  &lt;dt&gt;Term&lt;/dt&gt;
+  &lt;dd&gt;Definition&lt;/dd&gt;
+  &lt;dt&gt;Term&lt;/dt&gt;
+  &lt;dd&gt;Definition&lt;/dd&gt;
+  &lt;dt&gt;Term&lt;/dt&gt;
+  &lt;dd&gt;Definition&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
       </div>
 
       </section>
