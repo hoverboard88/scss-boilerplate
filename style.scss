@@ -1,14 +1,11 @@
 //Fonts
 @import "http://fonts.googleapis.com/css?family=Open+Sans";
-// @import "partials/fonts";
 
-@import "bower_components/susy/sass/susy";
-
-@import "partials/variables";
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/normalize";
 
+@import "partials/easy_grid";
 @import "partials/generics";
 @import "partials/links";
 @import "partials/code";
