@@ -12,8 +12,8 @@
   <meta name="generator" content="kss-node">
   <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="public/kss.css">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="public/kss.css">
   
 </head>
 <body id="kss-node">
@@ -33,40 +33,76 @@
       <li class="kss-nav__menu-item">
         <a href="section-1.html">
           <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Forms</span>
+          ><span class="kss-nav__name">Variables</span>
         </a>
         <ul class="kss-nav__menu-child">
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-1">
                 <span class="kss-nav__ref">1.1</span
-                ><span class="kss-nav__name">Required</span>
+                ><span class="kss-nav__name">Grid</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-2">
                 <span class="kss-nav__ref">1.2</span
-                ><span class="kss-nav__name">Inline</span>
+                ><span class="kss-nav__name">Booleans</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-3">
                 <span class="kss-nav__ref">1.3</span
-                ><span class="kss-nav__name">Radio</span>
+                ><span class="kss-nav__name">Colors</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-4">
                 <span class="kss-nav__ref">1.4</span
-                ><span class="kss-nav__name">Checkbox</span>
+                ><span class="kss-nav__name">Base Styles</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-5">
                 <span class="kss-nav__ref">1.5</span
-                ><span class="kss-nav__name">Submit Buttons</span>
+                ><span class="kss-nav__name">Font Weights</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-1.html#kssref-1-6">
+                <span class="kss-nav__ref">1.6</span
+                ><span class="kss-nav__name">Vertical Rhythm</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-1.html#kssref-1-7">
+                <span class="kss-nav__ref">1.7</span
+                ><span class="kss-nav__name">Headings</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-1.html#kssref-1-8">
+                <span class="kss-nav__ref">1.8</span
+                ><span class="kss-nav__name">Dropdowns</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-1.html#kssref-1-8">
+                <span class="kss-nav__ref">1.8</span
+                ><span class="kss-nav__name">Other Sizes</span>
               </a>
             </li>
         </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Forms</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-3.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Mixins</span>
+        </a>
       </li>
     </ul>
   </nav>
@@ -84,35 +120,17 @@
                 #permalink
             </span>
           </span>
-          Forms
+          Variables
         </a>
       </h1>
 
 
       <div class="kss-description">
-        <p>Normal <code>&lt;input&gt;</code> with <code>&lt;label&gt;</code> wrapper</p>
+        <p>SCSS Variables</p>
 
       </div>
     </div>
 
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <label for="input-text">
-  Normal Input
-  <input name="input-text" type="text">
-</label>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label for=&quot;input-text&quot;&gt;
-  Normal Input
-  &lt;input name=&quot;input-text&quot; type=&quot;text&quot;&gt;
-&lt;/label&gt;</code></pre>
-      </div>
 
       </div>
       <section id="kssref-1-1" class="kss-section kss-section--depth-2">
@@ -126,35 +144,21 @@
                 #permalink
             </span>
           </span>
-          Required
+          Grid
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Adds asterisks after label</p>
+        <p>Declare variables for grid.</p>
+<ul>
+<li><code>$grid__columns</code>: (integer) Amount of columns in grid.</li>
+<li><code>$grid__mobile-breakpoint</code>: (width) Breakpoint for when &quot;mobile&quot; becomes &quot;desktop&quot;.</li>
+</ul>
 
       </div>
     </div>
 
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <label class="label--required" for="input-required">
-  Required Input
-  <input name="input-required" type="text">
-</label>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label class=&quot;label--required&quot; for=&quot;input-required&quot;&gt;
-  Required Input
-  &lt;input name=&quot;input-required&quot; type=&quot;text&quot;&gt;
-&lt;/label&gt;</code></pre>
-      </div>
 
       </section>
       <section id="kssref-1-2" class="kss-section kss-section--depth-2">
@@ -168,35 +172,20 @@
                 #permalink
             </span>
           </span>
-          Inline
+          Booleans
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>If you want the label on the left side of the <code>&lt;input&gt;</code></p>
+        <p>Declare variables for grid.</p>
+<ul>
+<li><code>$border-box</code>: (Boolean) Turn box-sizing: <code>border-box</code> on or off.</li>
+</ul>
 
       </div>
     </div>
 
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <label class="label--inline" for="input-inline">
-  Inline Input
-  <input name="input-inline" type="text">
-</label>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label class=&quot;label--inline&quot; for=&quot;input-inline&quot;&gt;
-  Inline Input
-  &lt;input name=&quot;input-inline&quot; type=&quot;text&quot;&gt;
-&lt;/label&gt;</code></pre>
-      </div>
 
       </section>
       <section id="kssref-1-3" class="kss-section kss-section--depth-2">
@@ -210,35 +199,17 @@
                 #permalink
             </span>
           </span>
-          Radio
+          Colors
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>add to <code>&lt;label&gt;</code> if <code>&lt;input type=&quot;radio&quot;&gt;</code></p>
+        <p>To use colors throughout stylesheets</p>
 
       </div>
     </div>
 
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <label class="label--inline" for="input-inline">
-  Inline Input
-  <input name="input-inline" type="text">
-</label>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label class=&quot;label--inline&quot; for=&quot;input-inline&quot;&gt;
-  Inline Input
-  &lt;input name=&quot;input-inline&quot; type=&quot;text&quot;&gt;
-&lt;/label&gt;</code></pre>
-      </div>
 
       </section>
       <section id="kssref-1-4" class="kss-section kss-section--depth-2">
@@ -252,31 +223,23 @@
                 #permalink
             </span>
           </span>
-          Checkbox
+          Base Styles
         </a>
       </h2>
 
 
+      <div class="kss-description">
+        <p>Base variables</p>
+<ul>
+<li><code>$border-color</code>: (color) Used with font color and <code>&lt;hr&gt;</code>&#39;s.</li>
+<li><code>$border-border</code>: (color) Used with input borders.</li>
+<li><code>$base--font-family</code>: (font stack) Base body font.</li>
+<li><code>$secondary--font-family</code>: (font stack) Display font font.</li>
+</ul>
+
+      </div>
     </div>
 
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <label for="input-checkbox">
-  <input name="input-checkbox" type="checkbox">
-  Checkbox
-</label>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label for=&quot;input-checkbox&quot;&gt;
-  &lt;input name=&quot;input-checkbox&quot; type=&quot;checkbox&quot;&gt;
-  Checkbox
-&lt;/label&gt;</code></pre>
-      </div>
 
       </section>
       <section id="kssref-1-5" class="kss-section kss-section--depth-2">
@@ -290,27 +253,137 @@
                 #permalink
             </span>
           </span>
-          Submit Buttons
+          Font Weights
         </a>
       </h2>
 
 
+      <div class="kss-description">
+        <p>set &quot;bold&quot; and &quot;normal&quot; weights here and use @include font-weight() mixin instead of font-weight.</p>
+<ul>
+<li><code>$font-weight__normal</code>: (font-weight declaration) Used in font-weight() mixin.</li>
+<li><code>$font-weight__bold</code>: (font-weight declaration) Used in font-weight() mixin.</li>
+</ul>
+
+      </div>
     </div>
 
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <input type="submit" value="Submit Input">
-<button>Submit Button</button>
-        </div>
-      </div>
 
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;input type=&quot;submit&quot; value=&quot;Submit Input&quot;&gt;
-&lt;button&gt;Submit Button&lt;/button&gt;</code></pre>
+      </section>
+      <section id="kssref-1-6" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-1-6">
+          <span class="kss-title__ref">
+              1.6
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Vertical Rhythm
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Set base <code>font-size</code> and <code>line-height</code> for vertical rhythm</p>
+<ul>
+<li><code>$base--font-size</code>: (size in pixels) Used for vertical rhythm grid.</li>
+<li><code>$base--line-height</code>: (height in non-units) Used for vertical rhythm grid.</li>
+</ul>
+
       </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-1-7" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-1-7">
+          <span class="kss-title__ref">
+              1.7
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Headings
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Set font-size for Headings</p>
+<ul>
+<li><code>$font-size--h1</code>: (size in pixels) <code>&lt;h1&gt;</code> size.</li>
+<li><code>$font-size--h2</code>: (size in pixels) <code>&lt;h2&gt;</code> size.</li>
+<li><code>$font-size--h3</code>: (size in pixels) <code>&lt;h3&gt;</code> size.</li>
+<li><code>$font-size--h4</code>: (size in pixels) <code>&lt;h4&gt;</code> size.</li>
+<li><code>$font-size--h5</code>: (size in pixels) <code>&lt;h5&gt;</code> size.</li>
+<li><code>$font-size--h6</code>: (size in pixels) <code>&lt;h6&gt;</code> size.</li>
+</ul>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-1-8" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-1-8">
+          <span class="kss-title__ref">
+              1.8
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Dropdowns
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Values for dropdowns</p>
+<ul>
+<li><code>$dropdown__width</code>: (size in pixels) Width of dropdowns.</li>
+<li><code>$dropdown__width--offset</code>: (size in pixels) If your boxes have borders or padding.</li>
+</ul>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-1-8" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-1-8">
+          <span class="kss-title__ref">
+              1.8
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Other Sizes
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Set font-size for others</p>
+<ul>
+<li><code>$font-size--hero</code>: (size in pixels) Hero size.</li>
+<li><code>$font-size--small</code>: (size in pixels) <code>&lt;small&gt;</code> size.</li>
+</ul>
+
+      </div>
+    </div>
+
 
       </section>
 </article>
