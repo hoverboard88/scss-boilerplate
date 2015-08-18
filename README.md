@@ -49,4 +49,8 @@ The `scss` is documented using [kss-node](https://github.com/kss-node/kss-node).
 
 Notice the Styleguide comment at the bottom. The first must be `Styleguide X.0.0` and each sub section below should be `Styleguide X.1.0`, `Styleguide X.2.0` and so on.
 
+This code can be in any file in the `partials` directory.
+
+Run `./BUILD_STYLEGUIDE` to build the styleguide. It's advised to move this into your task runner.
+
 Documentation is a little sparse. Read through comments in scss to get a better idea of how it works.
