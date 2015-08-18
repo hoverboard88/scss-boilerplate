@@ -4,16 +4,6 @@
 // =============================================================================
 
 // =============================================================================
-// Normalize.scss settings
-// =============================================================================
-
-
-// Set to true if you want to add support for IE6 and IE7
-// Notice: setting to true might render some elements
-// slightly differently than when set to false
-$legacy_support_for_ie: false !default; // Used also in Compass
-
-// =============================================================================
 // HTML5 display definitions
 // =============================================================================
 
@@ -119,40 +109,6 @@ a {
   &:active {
     outline: 0;
   }
-}
-
-// =============================================================================
-// Typography
-// =============================================================================
-
-// Addresses font sizes and margins set differently in IE6/7
-// Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
-
-// Complex math/variables based on article explaining how to achieve vertical rhythm:
-// http://coding.smashingmagazine.com/2011/03/14/technical-web-typography-guidelines-and-techniques/
-
-h1 {
-  @include font-size($font-size--h1, true);
-}
-
-h2 {
-  @include font-size($font-size--h2, true);
-}
-
-h3 {
-  @include font-size($font-size--h3, true);
-}
-
-h4 {
-  @include font-size($font-size--h4, true);
-}
-
-h5 {
-  @include font-size($font-size--h5, true);
-}
-
-h6 {
-  @include font-size($font-size--h6, true);
 }
 
 // Addresses styling not present in IE 8/9, S5, Chrome
@@ -268,18 +224,6 @@ svg:not(:root) {
 
 figure {
   margin: 0;
-}
-
-// =============================================================================
-// Forms
-// =============================================================================
-
-// Define consistent border, margin, and padding
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
 }
 
 // 1. Corrects color not being inherited in IE6/7/8/9

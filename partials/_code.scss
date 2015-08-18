@@ -29,11 +29,18 @@ pre {
 	padding: 1em;
 	margin: 0 0 $base--spacing;
 	overflow: auto;
+	.kss-markup & {
+    padding: 0;
+		margin: 0;
+  }
 }
 
 :not(pre) > code,
 pre {
-	background: #ddd;
+	.kss-markup & {
+    background: none;
+  }
+  background: #ddd;
 }
 
 /* Inline code */

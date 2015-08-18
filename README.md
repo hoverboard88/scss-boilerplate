@@ -25,3 +25,28 @@ Grids are purposefully simple. Here is some example code:
 ```
 
 The `grid-column--padded` class is optional. The number refers to the number of grid columns the container takes up.
+
+## KSS ##
+
+The `scss` is documented using [kss-node](https://github.com/kss-node/kss-node). Example doc:
+
+```
+// Section Title
+//
+// Section description. This shouldn't have any actual code. Just serves as a heading.
+//
+// Styleguide 1.0.0
+
+// Sub-Section Title
+//
+// Description of code below.
+//
+// Markup:
+// <p>Some markup that will act as the example for the code.</p>
+//
+// Styleguide 1.1.0
+```
+
+Notice the Styleguide comment at the bottom. The first must be `Styleguide X.0.0` and each sub section below should be `Styleguide X.1.0`, `Styleguide X.2.0` and so on.
+
+Documentation is a little sparse. Read through comments in scss to get a better idea of how it works.

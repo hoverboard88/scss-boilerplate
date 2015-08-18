@@ -1,4 +1,5 @@
 fieldset {
+  margin: 0;
   border: 0;
   padding: 0;
 }
@@ -11,10 +12,8 @@ legend {
 // Normal `<input>` with `<label>` wrapper
 //
 // Markup:
-// <label for="input-text">
-//   Normal Input
-//   <input name="input-text" type="text">
-// </label>
+// <label for="input-text">Normal Input</label>
+// <input name="input-text" type="text">
 //
 // Styleguide 2.0.0
 label {
@@ -37,19 +36,19 @@ label {
 }
 // Required
 //
-// Adds asterisks after label
+// Adds asterisks after label. Creating a span with the words "Required" for accessibility purposes.
 //
 // Markup:
-// <label class="label--required" for="input-required">
-//   Required Input
-//   <input name="input-required" type="text">
-// </label>
+// <label for="input-required">Required Input <span class="span--required">(required)</span></label>
+// <input required name="input-required" type="text">
 //
 // Styleguide 2.1.0
-.label--required {
-  &:after {
+.span--required {
+  visibility: hidden;
+  &:before {
     content: "*";
     color: red;
+    visibility: visible;
   }
 }
 // Radio
@@ -57,9 +56,13 @@ label {
 // add to `<label>` if `<input type="radio">`
 //
 // Markup:
-// <label class="label--inline" for="input-inline">
+// <label class="label--radio" for="input-radio-1">
+//   <input name="radio-group" id="input-radio-1" type="radio">
 //   Inline Input
-//   <input name="input-inline" type="text">
+// </label>
+// <label class="label--radio" for="input-radio-2">
+//   <input name="radio-group" id="input-radio-2" type="radio">
+//   Inline Input
 // </label>
 //
 // Styleguide 2.3.0
@@ -73,8 +76,8 @@ label {
 // Checkbox
 //
 // Markup:
-// <label for="input-checkbox">
-//   <input name="input-checkbox" type="checkbox">
+// <label class="label--checkbox" for="input-checkbox">
+//   <input id="input-checkbox" type="checkbox">
 //   Checkbox
 // </label>
 //

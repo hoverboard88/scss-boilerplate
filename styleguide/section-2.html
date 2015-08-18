@@ -12,8 +12,7 @@
   <meta name="generator" content="kss-node">
   <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../kss.css">
   
 </head>
 <body id="kss-node">
@@ -111,12 +110,6 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
-        <a href="section-9.html">
-          <span class="kss-nav__ref">9</span
-          ><span class="kss-nav__name">Lists</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
         <a href="section-10.html">
           <span class="kss-nav__ref">10</span
           ><span class="kss-nav__name">Links</span>
@@ -136,7 +129,7 @@
       <div     id="kssref-2" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
-      <h1 class="kss-title kss-title--level-1">
+      <h1 class="kss-title double-spaced kss-title--level-1">
         <a class="kss-title__permalink" href="#kssref-2">
           <span class="kss-title__ref">
               2
@@ -160,25 +153,21 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <label for="input-text">
-  Normal Input
-  <input name="input-text" type="text">
-</label>
+          <label for="input-text">Normal Input</label>
+<input name="input-text" type="text">
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label for=&quot;input-text&quot;&gt;
-  Normal Input
-  &lt;input name=&quot;input-text&quot; type=&quot;text&quot;&gt;
-&lt;/label&gt;</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label for=&quot;input-text&quot;&gt;Normal Input&lt;/label&gt;
+&lt;input name=&quot;input-text&quot; type=&quot;text&quot;&gt;</code></pre>
       </div>
 
       </div>
       <section id="kssref-2-1" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
+      <h2 class="kss-title double-spaced kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-2-1">
           <span class="kss-title__ref">
               2.1
@@ -192,7 +181,7 @@
 
 
       <div class="kss-description">
-        <p>Adds asterisks after label</p>
+        <p>Adds asterisks after label. Creating a span with the words &quot;Required&quot; for accessibility purposes.</p>
 
       </div>
     </div>
@@ -202,25 +191,21 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <label class="label--required" for="input-required">
-  Required Input
-  <input name="input-required" type="text">
-</label>
+          <label for="input-required">Required Input <span class="span--required">(required)</span></label>
+<input required name="input-required" type="text">
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label class=&quot;label--required&quot; for=&quot;input-required&quot;&gt;
-  Required Input
-  &lt;input name=&quot;input-required&quot; type=&quot;text&quot;&gt;
-&lt;/label&gt;</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label for=&quot;input-required&quot;&gt;Required Input &lt;span class=&quot;span--required&quot;&gt;(required)&lt;/span&gt;&lt;/label&gt;
+&lt;input required name=&quot;input-required&quot; type=&quot;text&quot;&gt;</code></pre>
       </div>
 
       </section>
       <section id="kssref-2-2" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
+      <h2 class="kss-title double-spaced kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-2-2">
           <span class="kss-title__ref">
               2.2
@@ -262,7 +247,7 @@
       <section id="kssref-2-3" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
+      <h2 class="kss-title double-spaced kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-2-3">
           <span class="kss-title__ref">
               2.3
@@ -286,17 +271,25 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <label class="label--inline" for="input-inline">
+          <label class="label--radio" for="input-radio-1">
+  <input name="radio-group" id="input-radio-1" type="radio">
   Inline Input
-  <input name="input-inline" type="text">
+</label>
+<label class="label--radio" for="input-radio-2">
+  <input name="radio-group" id="input-radio-2" type="radio">
+  Inline Input
 </label>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label class=&quot;label--inline&quot; for=&quot;input-inline&quot;&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label class=&quot;label--radio&quot; for=&quot;input-radio-1&quot;&gt;
+  &lt;input name=&quot;radio-group&quot; id=&quot;input-radio-1&quot; type=&quot;radio&quot;&gt;
   Inline Input
-  &lt;input name=&quot;input-inline&quot; type=&quot;text&quot;&gt;
+&lt;/label&gt;
+&lt;label class=&quot;label--radio&quot; for=&quot;input-radio-2&quot;&gt;
+  &lt;input name=&quot;radio-group&quot; id=&quot;input-radio-2&quot; type=&quot;radio&quot;&gt;
+  Inline Input
 &lt;/label&gt;</code></pre>
       </div>
 
@@ -304,7 +297,7 @@
       <section id="kssref-2-4" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
+      <h2 class="kss-title double-spaced kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-2-4">
           <span class="kss-title__ref">
               2.4
@@ -324,16 +317,16 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <label for="input-checkbox">
-  <input name="input-checkbox" type="checkbox">
+          <label class="label--checkbox" for="input-checkbox">
+  <input id="input-checkbox" type="checkbox">
   Checkbox
 </label>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label for=&quot;input-checkbox&quot;&gt;
-  &lt;input name=&quot;input-checkbox&quot; type=&quot;checkbox&quot;&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label class=&quot;label--checkbox&quot; for=&quot;input-checkbox&quot;&gt;
+  &lt;input id=&quot;input-checkbox&quot; type=&quot;checkbox&quot;&gt;
   Checkbox
 &lt;/label&gt;</code></pre>
       </div>
@@ -342,7 +335,7 @@
       <section id="kssref-2-5" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
+      <h2 class="kss-title double-spaced kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-2-5">
           <span class="kss-title__ref">
               2.5
