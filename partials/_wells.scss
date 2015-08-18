@@ -1,3 +1,19 @@
+// Wells
+//
+// Boxes
+//
+// Styleguide 4.0.0
+
+// Well
+//
+// Boxes for content
+//
+// Markup:
+// <div class="well">
+//   A box with content in it.
+// </div>
+//
+// Styleguide 4.1.0
 .well {
   padding: $base--spacing / 2;
   @include breakpoint(700px) {
@@ -37,6 +53,19 @@
   right: -21px;
   color: inherit;
 }
+// Alerts
+//
+// .alert-success - Good to go!
+// .alert-info - neutral
+// .alert-warning - important
+// .alert-danger - very important
+//
+// Markup:
+// <div class="alert-success">
+//   A box with content in it.
+// </div>
+//
+// Styleguide 4.2.0
 .alert-success {
   background-color: #6fc067;
   border-color: #668c62;
