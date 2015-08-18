@@ -22,6 +22,7 @@ p, ul, ol, blockquote, input, textarea, fieldset, button, pre, table, hr, dl {
 //
 // Styleguide 6.1.0
 h1, h2, h3, h4, h5, h6 {
+  font-family: $secondary--font-family;
   @include font-weight(normal);
 }
 

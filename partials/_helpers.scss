@@ -11,8 +11,11 @@
   }
 }
 //for JavaScript. Above doesn't work if you want to show it after DOM load.
-.hide {
+.hide, .hidden {
   display: none;
+}
+.centered {
+	text-align: center;
 }
 .show {
   display: block;
@@ -57,10 +60,4 @@
 }
 .clear {
   clear: both;
-}
-
-@media print,
-  (-o-min-device-pixel-ratio: 5/4),
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 120dpi) {
 }
