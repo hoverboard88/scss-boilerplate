@@ -1,0 +1,49 @@
+/*
+ * Class-Based grid system
+ *
+ */
+
+/* If you want to use in Wordpress as shortcodes, add this to functions.php (or better yet in an include for shortcodes)
+
+//so shortcodes don't get wrapped in p tags
+remove_filter( 'the_content', 'wpautop' );
+add_filter( 'the_content', 'wpautop' , 12);
+
+function supcamp_40_grid_grid( $atts, $content = '' ) {
+
+  extract( shortcode_atts( array(
+    'columns' => '2'
+  ), $atts ) );
+
+  return '<div class="grid-columns grid-columns-' . $atts['columns'] . '">' . do_shortcode( $content ) . '</div>';
+}
+add_shortcode( 'grid', 'supcamp_40_grid_grid' );
+
+function supcamp_40_grid_column( $atts, $content = '' ) {
+
+  return '<div class="grid-column">' . do_shortcode( $content ) . '</div>';
+}
+add_shortcode( 'column', 'supcamp_40_grid_column' );
+
+ */
+
+.grid-columns {
+	@extend .clearfix;
+	display: flex;
+	.grid-column--padded {
+		padding-left: $base--spacing;
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+}
+
+@for $i from 1 through $grid__columns {
+	.grid-columns .grid-column-#{$i} {
+		float: left;
+		width: 100%;
+		@include breakpoint($grid__mobile-breakpoint) {
+			width: $i / $grid__columns * 100%;
+		}
+	}
+}
