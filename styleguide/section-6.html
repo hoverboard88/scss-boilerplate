@@ -47,32 +47,6 @@
           <span class="kss-nav__ref">3</span
           ><span class="kss-nav__name">Mixins</span>
         </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-1">
-                <span class="kss-nav__ref">3.1</span
-                ><span class="kss-nav__name">font-size</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-2">
-                <span class="kss-nav__ref">3.2</span
-                ><span class="kss-nav__name">font-weight</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-3">
-                <span class="kss-nav__ref">3.3</span
-                ><span class="kss-nav__name">input-placeholder</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-4">
-                <span class="kss-nav__ref">3.4</span
-                ><span class="kss-nav__name">Breakpoint</span>
-              </a>
-            </li>
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-4.html">
@@ -91,6 +65,32 @@
           <span class="kss-nav__ref">6</span
           ><span class="kss-nav__name">Typography</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-1">
+                <span class="kss-nav__ref">6.1</span
+                ><span class="kss-nav__name">Headings</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-2">
+                <span class="kss-nav__ref">6.2</span
+                ><span class="kss-nav__name">Spacing</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-3">
+                <span class="kss-nav__ref">6.3</span
+                ><span class="kss-nav__name">Small</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-4">
+                <span class="kss-nav__ref">6.4</span
+                ><span class="kss-nav__name">Display Font</span>
+              </a>
+            </li>
+        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-7.html">
@@ -103,52 +103,48 @@
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-3" class="kss-section kss-section--depth-1">
+      <div     id="kssref-6" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-3">
+        <a class="kss-title__permalink" href="#kssref-6">
           <span class="kss-title__ref">
-              3
+              6
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          Mixins
+          Typography
         </a>
       </h1>
 
 
       <div class="kss-description">
-        <p>Available Mixins</p>
+        <p>Basic typography</p>
 
       </div>
     </div>
 
 
       </div>
-      <section id="kssref-3-1" class="kss-section kss-section--depth-2">
+      <section id="kssref-6-1" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-1">
+        <a class="kss-title__permalink" href="#kssref-6-1">
           <span class="kss-title__ref">
-              3.1
+              6.1
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          font-size
+          Headings
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Declare font-size. Falls back from rem&#39;s with optional line-height for vertial rhythm.</p>
-<ul>
-<li><code>$font-size</code>: Size in pixels</li>
-<li><code>$line-height</code>: Boolean</li>
-</ul>
+        <p>Heading Sizes</p>
 
       </div>
     </div>
@@ -158,36 +154,43 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include font-size(14px, false);
+          <h1 class="single-spaced">Heading 1</h1>
+<h2 class="single-spaced">Heading 2</h2>
+<h3 class="single-spaced">Heading 3</h3>
+<h4 class="single-spaced">Heading 4</h4>
+<h5 class="single-spaced">Heading 5</h5>
+<h6 class="single-spaced">Heading 6</h6>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include font-size(14px, false);</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1 class=&quot;single-spaced&quot;&gt;Heading 1&lt;/h1&gt;
+&lt;h2 class=&quot;single-spaced&quot;&gt;Heading 2&lt;/h2&gt;
+&lt;h3 class=&quot;single-spaced&quot;&gt;Heading 3&lt;/h3&gt;
+&lt;h4 class=&quot;single-spaced&quot;&gt;Heading 4&lt;/h4&gt;
+&lt;h5 class=&quot;single-spaced&quot;&gt;Heading 5&lt;/h5&gt;
+&lt;h6 class=&quot;single-spaced&quot;&gt;Heading 6&lt;/h6&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-2" class="kss-section kss-section--depth-2">
+      <section id="kssref-6-2" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-2">
+        <a class="kss-title__permalink" href="#kssref-6-2">
           <span class="kss-title__ref">
-              3.2
+              6.2
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          font-weight
+          Spacing
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Declare font-weight. Some fonts use 400, 300, etc. To keep consistency, using this mixin.</p>
-<ul>
-<li><code>$font-weight</code>: bold or normal.</li>
-</ul>
+        <p>Various spacing</p>
 
       </div>
     </div>
@@ -197,35 +200,37 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include font-weight(bold);
+          <p>Normal Spaced</p>
+<p class="single-spaced">Single Spaced</p>
+<p class="single-spaced">One-Half Spaced</p>
+<p class="double-spaced">Double Spaced</p>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include font-weight(bold);</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;Normal Spaced&lt;/p&gt;
+&lt;p class=&quot;single-spaced&quot;&gt;Single Spaced&lt;/p&gt;
+&lt;p class=&quot;single-spaced&quot;&gt;One-Half Spaced&lt;/p&gt;
+&lt;p class=&quot;double-spaced&quot;&gt;Double Spaced&lt;/p&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-3" class="kss-section kss-section--depth-2">
+      <section id="kssref-6-3" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-3">
+        <a class="kss-title__permalink" href="#kssref-6-3">
           <span class="kss-title__ref">
-              3.3
+              6.3
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          input-placeholder
+          Small
         </a>
       </h2>
 
 
-      <div class="kss-description">
-        <p>When declaring placeholder style in <code>&lt;input&gt;</code>.</p>
-
-      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
@@ -233,42 +238,33 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include input-placeholder(){
- ...
-};
+          <p><small>Small Tag</small></p>
+<p class="small">Small Text</p>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include input-placeholder(){
- ...
-};</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;&lt;small&gt;Small Tag&lt;/small&gt;&lt;/p&gt;
+&lt;p class=&quot;small&quot;&gt;Small Text&lt;/p&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-4" class="kss-section kss-section--depth-2">
+      <section id="kssref-6-4" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-4">
+        <a class="kss-title__permalink" href="#kssref-6-4">
           <span class="kss-title__ref">
-              3.4
+              6.4
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          Breakpoint
+          Display Font
         </a>
       </h2>
 
 
-      <div class="kss-description">
-        <p>Mixin for Mobile-first media queries</p>
-<ul>
-<li><code>$width</code>: Any value, em or px.</li>
-</ul>
-
-      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
@@ -276,16 +272,12 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include breakpoint(30em){
- ...
-};
+          <p class="display-font">Display Font</p>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include breakpoint(30em){
- ...
-};</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p class=&quot;display-font&quot;&gt;Display Font&lt;/p&gt;</code></pre>
       </div>
 
       </section>

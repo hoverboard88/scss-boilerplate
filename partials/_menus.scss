@@ -1,3 +1,39 @@
+// Menus
+//
+// Navigation menu
+//
+// Styleguide 7.0.0
+
+// Vertical Menu
+//
+// Markup:
+// <nav class="menu">
+//   <ul>
+//     <li><a href="#">Link 1</a></li>
+//     <li><a href="#">Link 2</a></li>
+//     <li><a href="#">Link 3</a></li>
+//     <li><a href="#">Link 4</a></li>
+//   </ul>
+// </nav>
+//
+// Styleguide 7.1.0
+
+// Vertical Menu (spaced)
+//
+// Menu spaced
+//
+// Markup:
+// <nav class="menu menu--spaced">
+//   <ul>
+//     <li><a href="#">Link 1</a></li>
+//     <li><a href="#">Link 2</a></li>
+//     <li><a href="#">Link 3</a></li>
+//     <li><a href="#">Link 4</a></li>
+//   </ul>
+// </nav>
+//
+// Styleguide 7.2.0
+
 .menu {
   ul, ol {
     list-style: none;
@@ -9,13 +45,13 @@
     padding: 10px;
   }
   &.menu--horizontal {
+    li {
+      display: block;
+    }
     @include breakpoint(450px) {
       li {
         display: inline-block;
       }
-    }
-    li {
-      display: block;
     }
   }
   a {
@@ -23,11 +59,41 @@
     display: block;
   }
 }
+
+// Horizontal Menu
+//
+// Markup:
+// <nav class="menu menu--horizontal">
+//   <ul>
+//     <li><a href="#">Link 1</a></li>
+//     <li><a href="#">Link 2</a></li>
+//     <li><a href="#">Link 3</a></li>
+//     <li><a href="#">Link 4</a></li>
+//   </ul>
+// </nav>
+//
+// Styleguide 7.3.0
 .menu--horizontal {
   li {
     display: inline-block;
   }
 }
+
+// Menu (equal width)
+//
+// Menu spans whole parent container
+//
+// Markup:
+// <nav class="menu menu--equal-width">
+//   <ul>
+//     <li><a href="#">Link 1</a></li>
+//     <li><a href="#">Link 2</a></li>
+//     <li><a href="#">Link 3</a></li>
+//     <li><a href="#">Link 4</a></li>
+//   </ul>
+// </nav>
+//
+// Styleguide 7.4.0
 .menu--equal-width {
   ul, ol {
     display: table;

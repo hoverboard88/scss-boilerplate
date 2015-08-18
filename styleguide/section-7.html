@@ -47,32 +47,6 @@
           <span class="kss-nav__ref">3</span
           ><span class="kss-nav__name">Mixins</span>
         </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-1">
-                <span class="kss-nav__ref">3.1</span
-                ><span class="kss-nav__name">font-size</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-2">
-                <span class="kss-nav__ref">3.2</span
-                ><span class="kss-nav__name">font-weight</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-3">
-                <span class="kss-nav__ref">3.3</span
-                ><span class="kss-nav__name">input-placeholder</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-3.html#kssref-3-4">
-                <span class="kss-nav__ref">3.4</span
-                ><span class="kss-nav__name">Breakpoint</span>
-              </a>
-            </li>
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-4.html">
@@ -97,60 +71,78 @@
           <span class="kss-nav__ref">7</span
           ><span class="kss-nav__name">Menus</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-7.html#kssref-7-1">
+                <span class="kss-nav__ref">7.1</span
+                ><span class="kss-nav__name">Vertical Menu</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-7.html#kssref-7-2">
+                <span class="kss-nav__ref">7.2</span
+                ><span class="kss-nav__name">Vertical Menu (spaced)</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-7.html#kssref-7-3">
+                <span class="kss-nav__ref">7.3</span
+                ><span class="kss-nav__name">Horizontal Menu</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-7.html#kssref-7-4">
+                <span class="kss-nav__ref">7.4</span
+                ><span class="kss-nav__name">Menu (equal width)</span>
+              </a>
+            </li>
+        </ul>
       </li>
     </ul>
   </nav>
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-3" class="kss-section kss-section--depth-1">
+      <div     id="kssref-7" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-3">
+        <a class="kss-title__permalink" href="#kssref-7">
           <span class="kss-title__ref">
-              3
+              7
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          Mixins
+          Menus
         </a>
       </h1>
 
 
       <div class="kss-description">
-        <p>Available Mixins</p>
+        <p>Navigation menu</p>
 
       </div>
     </div>
 
 
       </div>
-      <section id="kssref-3-1" class="kss-section kss-section--depth-2">
+      <section id="kssref-7-1" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-1">
+        <a class="kss-title__permalink" href="#kssref-7-1">
           <span class="kss-title__ref">
-              3.1
+              7.1
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          font-size
+          Vertical Menu
         </a>
       </h2>
 
 
-      <div class="kss-description">
-        <p>Declare font-size. Falls back from rem&#39;s with optional line-height for vertial rhythm.</p>
-<ul>
-<li><code>$font-size</code>: Size in pixels</li>
-<li><code>$line-height</code>: Boolean</li>
-</ul>
-
-      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
@@ -158,36 +150,47 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include font-size(14px, false);
+          <nav class="menu">
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+  </ul>
+</nav>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include font-size(14px, false);</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;nav class=&quot;menu&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-2" class="kss-section kss-section--depth-2">
+      <section id="kssref-7-2" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-2">
+        <a class="kss-title__permalink" href="#kssref-7-2">
           <span class="kss-title__ref">
-              3.2
+              7.2
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          font-weight
+          Vertical Menu (spaced)
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Declare font-weight. Some fonts use 400, 300, etc. To keep consistency, using this mixin.</p>
-<ul>
-<li><code>$font-weight</code>: bold or normal.</li>
-</ul>
+        <p>Menu spaced</p>
 
       </div>
     </div>
@@ -197,35 +200,45 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include font-weight(bold);
+          <nav class="menu menu--spaced">
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+  </ul>
+</nav>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include font-weight(bold);</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;nav class=&quot;menu menu--spaced&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-3" class="kss-section kss-section--depth-2">
+      <section id="kssref-7-3" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-3">
+        <a class="kss-title__permalink" href="#kssref-7-3">
           <span class="kss-title__ref">
-              3.3
+              7.3
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          input-placeholder
+          Horizontal Menu
         </a>
       </h2>
 
 
-      <div class="kss-description">
-        <p>When declaring placeholder style in <code>&lt;input&gt;</code>.</p>
-
-      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
@@ -233,40 +246,47 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include input-placeholder(){
- ...
-};
+          <nav class="menu menu--horizontal">
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+  </ul>
+</nav>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include input-placeholder(){
- ...
-};</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;nav class=&quot;menu menu--horizontal&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-3-4" class="kss-section kss-section--depth-2">
+      <section id="kssref-7-4" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-3-4">
+        <a class="kss-title__permalink" href="#kssref-7-4">
           <span class="kss-title__ref">
-              3.4
+              7.4
             <span class="kss-title__permalink-hash">
                 #permalink
             </span>
           </span>
-          Breakpoint
+          Menu (equal width)
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Mixin for Mobile-first media queries</p>
-<ul>
-<li><code>$width</code>: Any value, em or px.</li>
-</ul>
+        <p>Menu spans whole parent container</p>
 
       </div>
     </div>
@@ -276,16 +296,26 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          @include breakpoint(30em){
- ...
-};
+          <nav class="menu menu--equal-width">
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+  </ul>
+</nav>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">@include breakpoint(30em){
- ...
-};</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;nav class=&quot;menu menu--equal-width&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
       </div>
 
       </section>
