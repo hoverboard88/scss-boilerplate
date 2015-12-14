@@ -155,17 +155,16 @@ $kss-vertical-rhythm       : $base--spacing;
 
 #kss-node {
   margin: 0;
-  padding: 20px;
   background: #fff;
 
   @media screen and (min-width: 769px) {
     padding: 0;
-    background: linear-gradient(to right, #eee, #e5e5e5 50%, #d7d7d7 100%) 20% 0 repeat-y, linear-gradient(to right, #eee, #eee 20%, #fff 20%) 0 0;
+    // background: linear-gradient(to right, #eee, #e5e5e5 50%, #d7d7d7 100%) 20% 0 repeat-y, linear-gradient(to right, #eee, #eee 20%, #fff 20%) 0 0;
 
     .kss-main,
     .kss-sidebar {
       float: left;
-      margin-right: -100%;
+      // margin-right: -100%;
       box-sizing: border-box;
     }
   }
@@ -173,21 +172,24 @@ $kss-vertical-rhythm       : $base--spacing;
   .kss-main {
     width: 100%;
     margin: 0 auto;
-    margin-top: $base--spacing;
+    padding: $base--spacing/2;
 
     @media screen and (min-width: 769px) {
-      width: 80%;
-      margin-left: 20%;
-      padding: 0 20px 0 30px;
+      float: right;
+      width: 70%;
+      margin-top: $base--spacing;
+      padding: 0 $base--spacing;
     }
   }
 
   .kss-sidebar {
-    border-bottom:1px solid #ddd;
-
+    background: #ddd;
+    width: 100%;
+    padding: $base--spacing/2;
     @media screen and (min-width: 769px) {
-      width: 20%;
-      padding: 0 10px 0 20px;
+      float: left;
+      width: 30%;
+      padding: 0 $base--spacing;
       border-bottom: 0;
     }
   }
@@ -197,13 +199,21 @@ $kss-vertical-rhythm       : $base--spacing;
 // Sidebar-area components
 // ------------------------------------------------------------------------------
 
+.kss-container {
+  @media screen and (min-width: 769px) {
+    display: flex;
+  }
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 #kss-node {
 
   .kss-doc-title {
     margin: 0;
-
+    @include font-size($font-size--h3);
     @media screen and (min-width: 769px) {
-      font-size: 1.5em;
+      @include font-size($font-size--h3);
     }
   }
 
@@ -217,6 +227,7 @@ $kss-vertical-rhythm       : $base--spacing;
   .kss-nav__menu {
     padding: 0;
     list-style-type: none;
+    margin-bottom: 0;
   }
 
   .kss-nav__menu-item {

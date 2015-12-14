@@ -29,7 +29,7 @@ p, ul, ol, blockquote, input, textarea, fieldset, button, pre, table, hr, dl {
 // <h5 class="single-spaced">Heading 5</h5>
 // <h6 class="single-spaced">Heading 6</h6>
 //
-// Styleguide 6.1.0
+// Styleguide 6.2.0
 h1, h2, h3, h4, h5, h6 {
   font-family: $secondary--font-family;
   @include font-weight(normal);
@@ -75,7 +75,7 @@ hr {
 // <p class="one-half-spaced">One-Half Spaced</p>
 // <p class="double-spaced">Double Spaced</p>
 //
-// Styleguide 6.2.0
+// Styleguide 6.3.0
 .single-spaced {
   margin-bottom: 0;
 }
@@ -94,7 +94,7 @@ hr {
 // <p><small>Small Tag</small></p>
 // <p class="small">Small Text</p>
 //
-// Styleguide 6.3.0
+// Styleguide 6.4.0
 .small, small {
   @include font-size($font-size--small);
 }
@@ -104,7 +104,140 @@ hr {
 // Markup:
 // <p class="h2 display-font">Display Font (PlutoSansLight)</p>
 //
-// Styleguide 6.4.0
+// Styleguide 6.5.0
 .display-font {
   font-family: $secondary--font-family;
+}
+
+// Unordered Lists
+//
+// Markup:
+// <ul>
+//  <li>List Item 1</li>
+//  <li>List Item 2</li>
+//  <li>List Item 3</li>
+//  <li>List Item 4</li>
+// </ul>
+//
+// Styleguide 6.6.0
+
+// Ordered Lists
+//
+// Markup:
+// <ol>
+//  <li>List Item 1</li>
+//  <li>List Item 2</li>
+//  <li>List Item 3</li>
+//  <li>List Item 4</li>
+// </ol>
+//
+// Styleguide 6.7.0
+ul, ol {
+  padding-left: 25px;
+}
+
+// Unstyled Lists
+//
+// Markup:
+// <ul class="list--unstyled">
+//  <li>List Item 1</li>
+//  <li>List Item 2</li>
+//  <li>List Item 3</li>
+//  <li>List Item 4</li>
+// </ul>
+//
+// Styleguide 6.8.0
+
+// Horizontal Lists
+//
+// Markup:
+// <ul class="list--unstyled list--horizontal">
+//  <li>List Item 1</li>
+//  <li>List Item 2</li>
+//  <li>List Item 3</li>
+//  <li>List Item 4</li>
+// </ul>
+//
+// Styleguide 6.9.0
+.list--unstyled {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  li {
+    display: block;
+  }
+  &.list--horizontal li {
+    display: inline-block;
+  }
+}
+// Spaced Lists
+//
+// Markup:
+// <ul class="list--unstyled list--horizontal list--spaced">
+//  <li>List Item 1</li>
+//  <li>List Item 2</li>
+//  <li>List Item 3</li>
+//  <li>List Item 4</li>
+// </ul>
+//
+// Styleguide 6.10.0
+.list--spaced {
+  li {
+    padding: $base--spacing/2;
+  }
+}
+
+// Justified Lists
+//
+// Markup:
+// <ul class="list--unstyled list--justified">
+//  <li>List Item 1</li>
+//  <li>List Item 2</li>
+//  <li>List Item 3</li>
+//  <li>List Item 4</li>
+// </ul>
+//
+// Styleguide 6.11.0
+.list--justified {
+  display: table;
+  width: 100%;
+  li {
+    display: table-cell;
+    text-align: center;
+  }
+}
+
+// Definition Lists
+//
+// Markup:
+// <dl class="def-list-inline">
+//   <dt>Term</dt>
+//   <dd>Definition</dd>
+//   <dt>Term</dt>
+//   <dd>Definition</dd>
+//   <dt>Term</dt>
+//   <dd>Definition</dd>
+//   <dt>Term</dt>
+//   <dd>Definition</dd>
+// </dl>
+//
+// Styleguide 6.12.0
+.def-list-inline {
+  @extend .clearfix;
+  dt {
+    clear: both;
+    float: left;
+    display: inline-block;
+    font-weight: bold;
+    &:after {
+      content: ":";
+      padding-right: 3px;
+    }
+  }
+  dd {
+    float: left;
+    display: inline-block;
+    margin-left: 0;
+  }
 }
