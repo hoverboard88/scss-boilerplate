@@ -9,21 +9,28 @@
 remove_filter( 'the_content', 'wpautop' );
 add_filter( 'the_content', 'wpautop' , 12);
 
-function supcamp_40_grid_grid( $atts, $content = '' ) {
+function kalish_grid_grid( $atts, $content = '' ) {
+
+  return '<div class="grid-columns">' . do_shortcode( $content ) . '</div>';
+}
+add_shortcode( 'grid', 'kalish_grid_grid' );
+
+function kalish_grid_column( $atts, $content = '' ) {
 
   extract( shortcode_atts( array(
-    'columns' => '2'
+    'columns' => '8',
+    'padded' => 'true'
   ), $atts ) );
 
-  return '<div class="grid-columns grid-columns-' . $atts['columns'] . '">' . do_shortcode( $content ) . '</div>';
-}
-add_shortcode( 'grid', 'supcamp_40_grid_grid' );
+  if ($atts['padded'] == 'true') {
+    $padded_class = ' grid-column--padded';
+  } else {
+    $padded_class = '';
+  }
 
-function supcamp_40_grid_column( $atts, $content = '' ) {
-
-  return '<div class="grid-column">' . do_shortcode( $content ) . '</div>';
+  return '<div class="grid-column grid-column-' . $atts['columns'] . $padded_class . '">' . do_shortcode( $content ) . '</div>';
 }
-add_shortcode( 'column', 'supcamp_40_grid_column' );
+add_shortcode( 'column', 'kalish_grid_column' );
 
  */
  // Grids
