@@ -11,8 +11,8 @@
 img {
 	height: auto;
 	max-width: 100%;
-  border: 1px solid $base--color;
-	padding: $base--spacing/2;
+  // border: 1px solid $base--color;
+	// padding: $base--spacing/2;
 }
 // Image (no border)
 //
@@ -26,4 +26,47 @@ img {
 }
 img[src*=".svg"] {
 	max-height: 100%;
+}
+// Broken Image
+//
+// Markup:
+// <img src="broken_image.jpg" alt="Broken Image">
+//
+// Styleguide 11.3.0
+img {
+  font-family: 'Helvetica';
+  font-weight: 300;
+  line-height: 2;
+  text-align: center;
+  min-height: 50px;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: calc(100% + 10px);
+    width: 100%;
+    background-color: lighten($base--color, 50%);
+    border: 2px dotted $base--color;
+    border-radius: 5px;
+  }
+
+  &:after {
+    content: "\f127" " Broken Image of " attr(alt);
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: FontAwesome;
+    color: $base--color;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
